@@ -1,0 +1,45 @@
+#JSGF V1.0;
+
+grammar speechtotext;
+
+public <hello> = hey red zone;
+public <greet> = (Power Options |Program| Browser | Blue |  Device Manager |Control | Player |task manager | Windows Security Center);
+
+public <command> = ( Open | Close ) (command| calculator |word | access |pad | paint |Browser );
+
+public <action> = (start | stop ) (excel |word pad);
+
+public <net> = (site) (face book | go girl | mail);
+
+public <absoluteTime> = <firstdigit> (plus| multiply | divide | minus) <seconddigit>;
+
+<firstdigit> =
+     ( one
+     | two
+     | three
+     | four
+     | five
+     | six
+     | seven
+     | eight
+     | nine
+     | ten
+     | eleven
+     | twelve
+      );
+
+
+<seconddigit> =
+     ( one
+     | two
+     | three
+     | four
+     | five
+     | six
+     | seven
+     | eight
+     | nine
+     | ten
+     | eleven
+     | twelve
+      );
